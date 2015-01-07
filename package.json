@@ -1,0 +1,22 @@
+{
+  "name": "onlinelabs-cloudformation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "body-parser": "^1.10.0",
+    "coffee-script": "^1.8.0",
+    "debug": "^2.1.1",
+    "express": "^4.10.6",
+    "lodash": "^2.4.1",
+    "request": "^2.51.0",
+    "request-promise": "^0.3.2",
+    "uuid": "^2.0.1"
+  }
+}
