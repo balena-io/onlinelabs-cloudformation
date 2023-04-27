@@ -17,8 +17,6 @@ Usage
 In order to create Custom CloudFormation resources you will have to include a SNS resource in your stack definition and add an http subscriber to that
 resource that points to a server running this project.
 
-You can either run your own or try it using the already deployed version here `https://onlinelabs-cloudformation.herokuapp.com`
-
 The `Properties` object defined in the cloudformation stack is passed as-is to the onlinelabs API except for the `ServiceToken`, which is used by AWS to
 send the messages, and `AuthToken` which gets converted to the `X-Auth-Token` header in the requests hitting the onlinelabs API.
 
@@ -33,7 +31,7 @@ Here is an example stack that starts a server
 		"OnlineLabs": {
 			"Type": "AWS::SNS::Topic",
 			"Properties": {
-				"Subscription": [{ "Endpoint": "https://onlinelabs-cloudformation.herokuapp.com", "Protocol": "https" }]
+				"Subscription": [{ "Endpoint": "<YOUR ENDPOINT>", "Protocol": "https" }]
 			}
 		},
 
@@ -60,7 +58,7 @@ Here is an example stack that starts a server that also has an additional volume
 		"OnlineLabs": {
 			"Type": "AWS::SNS::Topic",
 			"Properties": {
-				"Subscription": [{ "Endpoint": "https://onlinelabs-cloudformation.herokuapp.com", "Protocol": "https" }]
+				"Subscription": [{ "Endpoint": "<YOUR ENDPOINT>", "Protocol": "https" }]
 			}
 		},
 
